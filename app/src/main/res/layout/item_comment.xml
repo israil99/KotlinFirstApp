@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/size_8"
+    android:paddingRight="@dimen/size_20"
+    android:paddingTop="@dimen/size_10">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_2"
+        android:background="@color/grey_500" />
+
+
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_8">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/size_6"
+            android:layout_alignBottom="@+id/messageLayout"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/ic_feedback" />
+
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_6"
+            android:textAlignment="center"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold|italic"
+            tools:text="This is title" />
+
+        <TextView
+            android:id="@+id/bodyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_incoming_bubble"
+            android:padding="@dimen/size_6"
+            tools:text="This is the description of the view and this is next line" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
